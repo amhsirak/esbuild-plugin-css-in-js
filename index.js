@@ -17,3 +17,19 @@ const EmbedCSSPlugin = (options = {}) => {
     },
   };
 };
+
+async function generateCSS(sourcePath) {
+  const styleID = sha256(sourcePath);
+  const sourceCSS = await readFile(sourcePath);
+
+  return `(function(){
+        if (!document.getElementById('${styleID}')) {
+            var e = document.createElement('style');
+            e.id = '${styleID}';
+            e.textContent = \`${sourceCSS}\`;
+            document.head.appendChild(e);
+        }
+    })();`;
+}
+
+module.exports = EmbedCSSPlugin;
