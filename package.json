@@ -1,16 +1,30 @@
 {
-    "name": "esbuild-plugin-css-in-js",
-    "version": "0.0.1",
-    "description": "Esbuild plugin to bundle and embed css in js.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Karishma Shukla",
-    "license": "MIT",
-    "dependencies": {
-        "fs-extra": "^10.1.0",
-        "path": "^0.12.7",
-        "sha256": "^0.2.0"
-    }
+  "name": "esbuild-plugin-css-in-js",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Esbuild plugin to bundle and embed css in js.",
+  "keywords": [
+    "esbuild",
+    "css-in-js",
+    "esbuild-plugin"
+  ],
+  "homepage": "https://github.com/karishmashuklaa/esbuild-plugin-css-in-js",
+  "bugs": {
+    "url": "https://github.com/karishmashuklaa/esbuild-plugin-css-in-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karishmashuklaa/esbuild-plugin-css-in-js.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karishma Shukla",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "path": "^0.12.7",
+    "sha256": "^0.2.0"
+  }
 }
